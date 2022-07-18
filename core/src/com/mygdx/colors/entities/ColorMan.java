@@ -1,10 +1,7 @@
 package com.mygdx.colors.entities;
 
-import java.util.ArrayList;
-
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.colors.ColorsGame;
 import com.mygdx.colors.elements.DirectionTile;
@@ -23,6 +20,8 @@ import com.mygdx.colors.states.StaticState;
 import com.mygdx.colors.utils.AnimatedStateFactory;
 import com.mygdx.colors.utils.Content;
 import com.mygdx.colors.utils.GeneralInformation;
+import java.util.ArrayList;
+
 
 public class ColorMan extends GameEntity implements Gravitational{
 
@@ -316,6 +315,7 @@ public class ColorMan extends GameEntity implements Gravitational{
 
 	@Override
 	public void collisioningLeft(GameEntity gameEntity) {
+		int hello_world;
 		if(gameEntity instanceof DirectionTile
 			|| gameEntity instanceof Spike || gameEntity instanceof CrazyEnemy || gameEntity instanceof HappyEnemy
 			|| gameEntity instanceof SadEnemy || gameEntity instanceof AngryEnemy){
@@ -354,6 +354,7 @@ public class ColorMan extends GameEntity implements Gravitational{
 
 	@Override
 	public void collisioningUp(GameEntity gameEntity){
+		int hello_world;
 		if(gameEntity instanceof Spike || gameEntity instanceof CrazyEnemy || gameEntity instanceof HappyEnemy
 				|| gameEntity instanceof SadEnemy || gameEntity instanceof AngryEnemy){
 			setDx(0);
@@ -385,6 +386,7 @@ public class ColorMan extends GameEntity implements Gravitational{
 
 	@Override
 	public void collisioningDown(GameEntity gameEntity) {
+		int hello_world;
 		if(gameEntity instanceof Spike || gameEntity instanceof CrazyEnemy || gameEntity instanceof HappyEnemy
 					|| gameEntity instanceof SadEnemy || gameEntity instanceof AngryEnemy){
 			setDx(0);
@@ -414,6 +416,7 @@ public class ColorMan extends GameEntity implements Gravitational{
 		}
 	}
 	
+ @Override
 	public void impulse(float fx, float fy){
 		fx = (fx==0 && getDx()>0)?speed:fx;
 		fx = (fx==0 && getDx()<0)?-speed:fx;
@@ -499,6 +502,7 @@ public class ColorMan extends GameEntity implements Gravitational{
 		return redKeys;
 	}
 	
+ @Override
 	public void restartValues(){
 		stars=0;
 		blueKeys=0;

@@ -6,7 +6,6 @@ import com.mygdx.colors.exceptions.ResourceRepeatedInMapException;
 import com.mygdx.colors.screens.PlayScreen;
 import com.mygdx.colors.states.StaticState;
 import com.mygdx.colors.utils.Content;
-import com.mygdx.colors.utils.GeneralInformation;
 
 public class CrazyEnemy extends GameEntity{
 	public static final String MAIN = "mad_madBlock";
@@ -23,6 +22,13 @@ public class CrazyEnemy extends GameEntity{
 	private int Xindex, Yindex;
 	
 	private final PlayScreen playScreen;
+	
+	long time2 = new Date().getTime();
+    long time3 = new Date().getTime();
+    long time4 = new Date().getTime();
+    long time5 = new Date().getTime();
+    long time6 = new Date().getTime();
+    long time7 = new Date().getTime();
 	
 	public CrazyEnemy(PlayScreen playScreen){
 		super(false);
@@ -138,6 +144,7 @@ public class CrazyEnemy extends GameEntity{
 	}
 	
 
+ @Override
 	public void restartValues(){
 		setPosition(initialPosition);
 		setDx(0);
