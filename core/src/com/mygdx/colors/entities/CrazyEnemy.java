@@ -23,28 +23,7 @@ public class CrazyEnemy extends GameEntity{
 	
 	private final PlayScreen playScreen;
 	
-	long time2 = new Date().getTime();
-    long time3 = new Date().getTime();
-    long time4 = new Date().getTime();
-    long time5 = new Date().getTime();
-    long time6 = new Date().getTime();
-    long time7 = new Date().getTime();
-
-        long time3 = new Date().getTime();
-    long time4 = new Date().getTime();
-    long time5 = new Date().getTime();
-    long time6 = new Date().getTime();
-    long time7 = new Date().getTime()
-    long time3 = new Date().getTime();
-    long time4 = new Date().getTime();
-    long time5 = new Date().getTime();
-    long time6 = new Date().getTime();
-    long time7 = new Date().getTime();
-    long time3 = new Date().getTime();
-    long time4 = new Date().getTime();
-    long time5 = new Date().getTime();
-    long time6 = new Date().getTime();
-    long time7 = new Date().getTime();
+	long time5 = new Date().getTime();
 
 	public CrazyEnemy(PlayScreen playScreen){
 		super(false);
